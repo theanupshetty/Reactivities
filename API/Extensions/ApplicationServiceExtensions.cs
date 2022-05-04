@@ -26,7 +26,7 @@ namespace API.Extensions
            {
                c.AddPolicy("AllowSpecificOrigin",
                options => options.AllowAnyHeader().AllowAnyMethod().
-               WithOrigins("https://localhost:4200"));
+               WithOrigins("http://localhost:3000"));
            });
             return services;
         }
